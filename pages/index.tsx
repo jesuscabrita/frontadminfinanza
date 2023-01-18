@@ -82,7 +82,7 @@ const Index = ({ last_update , value_buy, value_sell,}) => {
                     color:light ? "var(--zero)" : "var(--ceroN)",
                     fontSize:'17px',
                     }}>
-                    <Grid item>Fecha del Mercado Argentino</Grid>
+                    <Grid item>Fecha del Mercado Argentino.</Grid>
                     <Grid item>{moment(fecha.last_update).format('MMMM Do YYYY, h:mm:ss a')}</Grid>
                 </Grid>
                 <Grid sx={{
@@ -115,7 +115,7 @@ const Index = ({ last_update , value_buy, value_sell,}) => {
                     marginTop:'20px',
                     gap:'10px'
                     }}>
-                    <Grid item>Resumen</Grid>
+                    <Grid item>Resumen.</Grid>
                     <Datas/>
                 </Grid>
                 {adminis 

@@ -17,7 +17,7 @@ export const TarjetaUser = ({admin}) => {
     
     return (
     <Grid item sx={{ 
-        width: !mobile ? "420px" : '330px', 
+        width: !mobile ? "480px" : '380px', 
         height: "100%", 
         borderRadius: "16px", 
         background: light ? "var(--ceroN)" : "var(--terciarioN)", 

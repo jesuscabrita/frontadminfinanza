@@ -40,7 +40,7 @@ export const Form = () => {
 
     return (
         <Grid sx={{
-            width: !mobile ? '600px' : '330px',
+            width: !mobile ? '600px' : '380px',
             height: "100%", 
             borderRadius: "16px",  
             paddingBottom:'16px',

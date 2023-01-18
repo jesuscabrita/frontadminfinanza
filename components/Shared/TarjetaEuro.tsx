@@ -20,7 +20,7 @@ export const TarjetaEuro = ({ compraOficial, ventaOficial, ventaBlue, compraBlue
     return (
     <Grid sx={{
             minWidth: '300px',
-            width:!mobile ? '400px': '330px',
+            width:!mobile ? '400px': '380px',
             height: "100%", 
             borderRadius: "16px", 
             background: 'var(--activo)', 

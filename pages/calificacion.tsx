@@ -181,7 +181,7 @@ const Calificacion = () => {
                         value={comentario}
                         onChange={handleChange}
                         style={{
-                            width: !mobile ? '50%' : '330px',
+                            width: !mobile ? '50%' : '380px',
                             height:!mobile ? '100px' : '200px',
                             background: light ? 'var(--ceroN)':'var(--dark)',
                             border:`1px solid ${light ? "var(--zero)" : "var(--ceroN)" } `,

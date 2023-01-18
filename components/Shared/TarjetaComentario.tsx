@@ -50,7 +50,7 @@ export const Comentario =({calificacion})=>{
     return(
         <Grid sx={{
             minWidth: '300px',
-            width: !mobile ? '600px': '330px',
+            width: !mobile ? '600px': '380px',
             height: "100%", 
             borderRadius: "16px", 
             background: light ? "var(--ceroN)" : "var(--terciarioN)", 
@@ -91,14 +91,11 @@ export const Comentario =({calificacion})=>{
                         <Dele onClick={alertaDelete} size={20} style={{ cursor: 'pointer', color: "var(--ceroN)", }} /> 
                     </Grid> : null} 
                 </Grid>}
-    
             </Grid>
             <Grid sx={{padding:'10px',color: light ? "var(--terciario)" : "var(--cero3)"}}>
             <Grid sx={{color: light ? "var(--cero2)" : "var(--cero3)", fontSize:'12px'}}>creado el {moment(calificacion.createdAt).format(`Do MMMM YYYY, h:mm:ss a`)}</Grid>
             {calificacion.comentario}
             </Grid>
-            
-
         </Grid>
     )
 }

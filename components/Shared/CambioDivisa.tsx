@@ -88,7 +88,7 @@ export const CambioDivisa = ({ venta, value_sell }) => {
         };
 
     return (
-        <Grid item sx={{ width: !mobile ? "600px" : "330px", height: "100%", borderRadius: "16px", background: light ? "var(--ceroN)" : "var(--terciarioN)", paddingBottom: "16px",}}>
+        <Grid item sx={{ width: !mobile ? "600px" : "370px", height: "100%", borderRadius: "16px", background: light ? "var(--ceroN)" : "var(--terciarioN)", paddingBottom: "16px",}}>
             <Grid container item sx={{ background: "var(--segundario)", borderRadius: "10px 10px 0px 0px", padding: "10px", color: "var(--cero)", alignItems: "center", gap: "16px",}}>
                 <Circle size={25} /> Cambio Blue
             </Grid>

@@ -155,12 +155,12 @@ const Manage = () => {
                         padding:'5px',
                         borderRadius:'10px',
                         fontSize:'10px'
-                        
                     }}>
                         Eliminar todo
                 </Grid> : null}
     </Grid>
         : <Grid container item sx={{
+            
             fontSize: '25px',
             alignItems: 'center',
             justifyContent: 'center',

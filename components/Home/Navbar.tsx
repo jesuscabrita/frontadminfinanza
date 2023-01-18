@@ -196,9 +196,10 @@ export const Navbar: React.FC = () => {
                 <Grid sx={{ marginBottom: "15px" }}>
                   <ButtonNavbar href="/calificacion"><Setting size={20} />Calificación</ButtonNavbar>
                 </Grid>
+                {user &&
                 <Grid onClick={() => logout({ returnTo: window.location.origin })} sx={{ marginBottom: "15px" }}>
                   <ButtonNavbar href=""><Cerrar size={20} />Cerrar Sesion</ButtonNavbar>
-                </Grid>
+                </Grid>}
               </Grid>
             ) : null}
             <Box sx={{ flexGrow: 1 }} />

@@ -112,7 +112,7 @@ const Manage = () => {
     <>
     {user ? 
     <Grid container item sx={{
-        height: '190vh',
+        height: '195vh',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',

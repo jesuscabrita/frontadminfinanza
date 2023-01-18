@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { AuthenticatedApp } from "../components/auth/AuthenticatedApp";
 import { useMemo } from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { Analytics } from '@vercel/analytics/react';
 
 const MyApp = ({ Component, pageProps }) => {
   const origin = useMemo(() => {
@@ -39,6 +40,7 @@ const MyApp = ({ Component, pageProps }) => {
               <InfoContextProvider>
                 <Layout>
                   <Component {...pageProps} />
+                  <Analytics />
                 </Layout>
               </InfoContextProvider>
             </LocalizationProvider>

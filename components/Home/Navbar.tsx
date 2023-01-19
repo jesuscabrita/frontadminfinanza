@@ -120,7 +120,7 @@ export const Navbar: React.FC = () => {
                     anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} 
                     variant="dot">
                   <Avatar 
-                      alt={user.name} 
+                      alt={user?.name} 
                       sx={{ width: 60, height: 60 }} 
                       src={user.picture 
                       ? user.picture 

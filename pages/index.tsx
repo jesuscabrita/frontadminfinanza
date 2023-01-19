@@ -71,7 +71,7 @@ const Index = ({ last_update , value_buy, value_sell,}) => {
                     color:light ? "var(--zero)" : "var(--ceroN)",
                     marginTop:'10px'
                     }}>
-                    Hola Bienvenido {user.name}!<Saludo/>
+                    Hola Bienvenido {user?.name}!<Saludo/>
                 </Grid> 
                 : null } 
                 <Grid item sx={{
@@ -156,7 +156,7 @@ const Index = ({ last_update , value_buy, value_sell,}) => {
                     color:light ? "var(--zero)" : "var(--ceroN)",
                     marginTop:'10px'
                     }}>
-                    Hola Bienvenido {user.name}!<Saludo/>
+                    Hola Bienvenido {user?.name}!<Saludo/>
                 </Grid> 
                 : null }
                 <Grid item sx={{

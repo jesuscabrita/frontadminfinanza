@@ -49,6 +49,8 @@ const Calificacion = () => {
         await create_Calificacion({
             comentario,
             valor,
+            imagen: user?.picture,
+            name: user?.name,
         }, token)
         alertaCalifica(create_Calificacion)
         setComentario('')

@@ -21,7 +21,7 @@ export const Comentario =({calificacion})=>{
     const [light] = useContext(Context);
     const mobile = useMediaQuery("(max-width:600px)", { noSsr: true });
     const { user, getAccessTokenSilently } = useAuth0();
-    const administrador = user.sub === 'linkedin|hZJgKWBXCL';
+    const administrador = user?.sub === 'linkedin|hZJgKWBXCL';
     
 
     const alertaDelete =()=>{
@@ -68,11 +68,11 @@ export const Comentario =({calificacion})=>{
                 }}>
                 {!mobile? <>
                 <Grid container alignItems={'center'} gap={1} fontSize={'12px'}>
-                    <Avatar alt={user?.name ?? ''} src={user?.picture ?? ''} sx={{ width: '30px', height: '30px' }} />
-                    {'Anónimo'}
+                    <Avatar alt={user?.name ?? ''} src={calificacion?.imagen ?? ''} sx={{ width: '30px', height: '30px' }} />
+                    {calificacion?.name}
                     <Comen size={15} />
                 </Grid>
-                <EstrellaDisable valor={calificacion.valor} />
+                <EstrellaDisable valor={calificacion?.valor} />
                 <Grid container justifyContent={'end'}>
                 {administrador ?  <Dele onClick={alertaDelete} size={20} style={{ cursor: 'pointer', color: "var(--ceroN)", }} /> : null }
                 </Grid>
@@ -80,12 +80,12 @@ export const Comentario =({calificacion})=>{
                 :
                 <Grid  sx={{display:'flex' , alignItems:'center', justifyContent:'space-between', gap:'12px'}} >
                 <Grid sx={{display: 'flex', alignItems:'center' , gap:'5px' , fontSize:'12px'}}>
-                    <Avatar alt={user?.name ?? ''} src={user?.picture ?? ''} sx={{ width: '30px', height: '30px' }} />
-                    {'Anónimo'}
+                    <Avatar alt={user?.name ?? ''} src={calificacion?.imagen ?? ''} sx={{ width: '30px', height: '30px' }} />
+                    {calificacion?.name}
                     <Comen size={15} />
                 </Grid>
                 <Grid sx={{display:'flex'}}>
-                    <EstrellaDisable valor={calificacion.valor} />
+                    <EstrellaDisable valor={calificacion?.valor} />
                 </Grid>
                 {administrador ? <Grid sx={{display:'flex'}}>
                         <Dele onClick={alertaDelete} size={20} style={{ cursor: 'pointer', color: "var(--ceroN)", }} /> 
@@ -94,7 +94,7 @@ export const Comentario =({calificacion})=>{
             </Grid>
             <Grid sx={{padding:'10px',color: light ? "var(--terciario)" : "var(--cero3)"}}>
             <Grid sx={{color: light ? "var(--cero2)" : "var(--cero3)", fontSize:'12px'}}>creado el {moment(calificacion.createdAt).format(`Do MMMM YYYY, h:mm:ss a`)}</Grid>
-            {calificacion.comentario}
+            {calificacion?.comentario}
             </Grid>
         </Grid>
     )

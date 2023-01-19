@@ -4,7 +4,7 @@ export interface calificacion {
     comentario: string;
     valor: number;
     _id: string;
-    createdAt:string;
+    imagen:string;
     name:string;
 }
 
